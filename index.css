@@ -1,0 +1,276 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 900px) {
+    .header {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+    }
+
+    .navbar > ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .navbar {
+        background-color: #000000e6;
+        padding: 1em;
+    }
+
+    .navbar > ul > li {
+        margin: auto 2em;
+    }
+
+    .navbar > ul > li > a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar > ul > li > a:hover {
+        color: blue;
+    }
+
+    .brand {
+        background-color: black;
+        box-shadow: grey 0em 0em 0.5em;
+        color: white;
+        padding: 0.3em 0.7em;
+        border-radius: 0.3em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h2 span {
+        color: blue;
+    }
+
+    /*here is our home section styling*/
+
+    .home {
+        background-color: red;
+        background-image: url("./images/home.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info {
+        width: 25em;
+        margin: auto;
+        background-color: #000000e3;
+        color: white;
+        padding: 2em 3em;
+        border-radius: 1em;
+    }
+
+    .info:hover {
+        box-shadow: 0em 0em 0.5em white;
+    }
+
+    .info span {
+        font-size: 2em;
+        font-weight: bolder;
+        margin-bottom: 1em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .info p {
+        margin-top: 1em;
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+        font-size: 1.4em;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: white;
+        transition-property: all;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+        transition-timing-function: ease-out;
+    }
+
+    .icons a:hover {
+        color: blue;
+        font-size: 1.45em;
+        z-index: 2;
+    }
+
+    .home > a {
+        font-size: 2.9em;
+        position: absolute;
+        bottom: 0.1em;
+        color: white;
+        transition: all 0.3s ease-in 0.1s;
+    }
+
+    .home > a:hover {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 899px) {
+    .navbar > ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .navbar {
+        background-color: black;
+        padding: 0em;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar > ul > li {
+        margin: 2em auto;
+    }
+
+    .navbar > ul > li > a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar > ul > li > a:hover {
+        color: blue;
+    }
+
+    .brand {
+        background-color: black;
+        box-shadow: grey 0em 0em 0.5em;
+        color: white;
+        padding: 0.3em 0.7em;
+        border-radius: 0.3em;
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar .brand {
+        display: none;
+    }
+
+    h2 span {
+        color: blue;
+    }
+    .hamburger > div {
+        width: 2em;
+        height: 0.3em;
+        background-color: white;
+        margin-bottom: 0.2em;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #000000e6;
+        padding: 1em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .mobile-nav > div {
+        margin: auto 0em;
+    }
+
+    /* here is our home stylinng for mobile layouts */
+
+    .home {
+        background-color: red;
+        background-image: url(./images/home.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info {
+        width: 25em;
+        margin: auto;
+        background-color: #000000e3;
+        color: white;
+        padding: 2em 1em;
+        border-radius: 1em;
+    }
+
+    .info:hover {
+        box-shadow: 0em 0em 0.5em white;
+    }
+
+    .info span {
+        font-size: 2em;
+        font-weight: bolder;
+        margin-bottom: 1em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .info p {
+        margin-top: 1em;
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+        font-size: 1.4em;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: white;
+        transition-property: all;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+        transition-timing-function: ease-out;
+    }
+
+    .icons a:hover {
+        color: blue;
+        font-size: 1.45em;
+        z-index: 2;
+    }
+
+    .home > a {
+        font-size: 2.9em;
+        position: absolute;
+        bottom: 0.1em;
+        color: white;
+        transition: all 0.3s ease-in 0.1s;
+    }
+
+    .home > a:hover {
+        font-size: 3em;
+    }
+}
+}
