@@ -11,6 +11,9 @@
 }
 
 @media (min-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
     .header {
         position: absolute;
         top: 0;
@@ -38,11 +41,14 @@
         font-weight: bold;
         color: white;
         text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .navbar > ul > li > a:hover {
         color: blue;
+    }
+    .mobile-nav {
+        display: none;
     }
 
     .brand {
@@ -51,7 +57,7 @@
         color: white;
         padding: 0.3em 0.7em;
         border-radius: 0.3em;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     h2 span {
@@ -88,13 +94,13 @@
         font-size: 2em;
         font-weight: bolder;
         margin-bottom: 1em;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .info p {
         margin-top: 1em;
         font-size: 1.2em;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .icons {
@@ -130,9 +136,61 @@
     .home > a:hover {
         font-size: 3em;
     }
-}
 
+    /* here start our about me section */
+    .about {
+        background: rgb(34, 193, 195);
+        background: linear-gradient(
+            262deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(38, 96, 218, 1) 32%,
+            rgba(45, 238, 253, 1) 100%
+        );
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    .image {
+        flex: 1;
+        padding: 2em;
+        margin: 2em auto;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .image > img {
+        width: 17.75em;
+        height: 23.75em;
+        border-radius: 2em;
+    }
+    .info-about {
+        flex: 2;
+        padding: 3.8em;
+        align-items: center;
+    }
+
+    .info-about > h3 {
+        font-size: 3em;
+    }
+
+    .info-about > p {
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        font-size: 1.5em;
+    }
+    .about > a {
+        font-size: 2.9em;
+        position: absolute;
+        bottom: 0.1em;
+        color: white;
+        transition: all 0.3s ease-in 0.1s;
+    }
+}
 @media (max-width: 899px) {
+    .header {
+        position: fixed;
+        width: 100%;
+    }
     .navbar > ul {
         display: flex;
         flex-direction: column;
@@ -146,6 +204,7 @@
         position: fixed;
         width: 100%;
         height: 100%;
+        display: none;
     }
 
     .navbar > ul > li {
@@ -158,7 +217,7 @@
         font-weight: bold;
         color: white;
         text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .navbar > ul > li > a:hover {
@@ -171,7 +230,7 @@
         color: white;
         padding: 0.3em 0.7em;
         border-radius: 0.3em;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
     .navbar .brand {
         display: none;
@@ -193,7 +252,7 @@
         justify-content: space-between;
         background-color: #000000e6;
         padding: 1em;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .mobile-nav > div {
@@ -230,13 +289,13 @@
         font-size: 2em;
         font-weight: bolder;
         margin-bottom: 1em;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .info p {
         margin-top: 1em;
         font-size: 1.2em;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .icons {
@@ -262,6 +321,7 @@
     }
 
     .home > a {
+        display: none;
         font-size: 2.9em;
         position: absolute;
         bottom: 0.1em;
@@ -272,5 +332,56 @@
     .home > a:hover {
         font-size: 3em;
     }
-}
+
+    /* HERE WE START OUR ABOUT ME SECTION */
+    .about {
+        background: rgb(34, 193, 195);
+        background: linear-gradient(
+            262deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(38, 96, 218, 1) 32%,
+            rgba(45, 238, 253, 1) 100%
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+    }
+    .image {
+        flex: 1;
+        padding: 2em;
+        margin: 2em auto;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .image > img {
+        width: 12.75em;
+        height: 18.75em;
+        border-radius: 2em;
+    }
+    .info-about {
+        flex: 2;
+        padding: 3.8em;
+        align-items: center;
+    }
+
+    .info-about > h3 {
+        font-size: 2em;
+    }
+
+    .info-about > p {
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        font-size: 1em;
+    }
+    .about > a {
+        display: none;
+        font-size: 2.9em;
+        position: absolute;
+        bottom: 0.1em;
+        color: white;
+        transition: all 0.3s ease-in 0.1s;
+    }
 }

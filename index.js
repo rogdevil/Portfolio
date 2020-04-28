@@ -16,6 +16,7 @@ $(document).ready(() => {
         });
     }
     if (width > 900) {
-        $(".mobile-nav").hide();
+        $(".navbar").show();
+        console.log("hide");
     }
 });
