@@ -377,6 +377,7 @@
         font-size: 1em;
     }
     .about > a {
+    display: none;
         font-size: 2.9em;
         position: absolute;
         bottom: -16em;
